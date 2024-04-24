@@ -1,0 +1,10 @@
+@import "../utils/variables";
+@import "../utils/normalize";
+
+@import "../layout/_header";
+@import "../layout/_footer";
+
+@import "../components/loader";
+@import "../components/main-button";
+@import "../components/restaurant-card";
+@import "../components/search-input";

@@ -1,0 +1,17 @@
+
+.main-button {
+    color: $white;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient($secondary-color, $primary-color);
+    padding: 13px 19px;
+    font-size: 16px;
+    font-weight: 500;
+    @include button-shadow;
+    transition: all 0.5s;
+    &:hover{
+        filter: brightness(1.1);
+        @include button-shadow-hover;
+    }
+}

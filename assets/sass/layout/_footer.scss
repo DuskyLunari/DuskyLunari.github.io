@@ -1,0 +1,30 @@
+
+.footer {
+    background-color: $black-background;
+    color: $white;
+    padding:  22px 25px;
+    @include flex-column;
+    align-items: flex-start;
+    gap: 16px;
+    &__logo {
+        font-size: 27px;
+    }
+    &__bloc {
+        @include flex-column;
+        gap : 7px;
+        &__item {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        align-items: center;
+        font-weight: 500;
+        & i {
+            width: 11px;
+            height: 13px;
+            }
+        }  
+    }
+    p {
+        margin: 5px 0; 
+    }
+}

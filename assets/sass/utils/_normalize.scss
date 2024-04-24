@@ -1,5 +1,9 @@
 /* Handling and removing uneeded natural DOM behavior */
 
+* {
+    @include text-font;
+}
+
 .main-container {
     padding: 0;
     margin : 0;
@@ -14,6 +18,10 @@ body {
 h1, h2, h3, p {
     padding: 0;
     margin: 0;
+}
+
+h1, h2, h3 {
+    @include title-font;
 }
 
 ul {

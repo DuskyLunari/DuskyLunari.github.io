@@ -4,6 +4,7 @@
     padding: 0;
     margin : 0;
     box-sizing: border-box;
+    width: 100%;
 }
 
 h1, h2, h3, p {
@@ -20,4 +21,11 @@ ul, li {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
 
+input {
+    border: none;
+    background-color: transparent;
+}

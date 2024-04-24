@@ -1,0 +1,43 @@
+
+.header {
+    @include flex-column;
+    &__logo-container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        &__return-arrow {
+            position: absolute;
+            left: 18px;
+            width: 30px;
+            height: 30px;
+            & i {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &__logo {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            margin: 14px 0;
+            @include title-font;
+        }
+    }
+    &__location-container {
+        background-color: #EAEAEA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        gap: 17px;
+        @include header-shadow;
+            & i {
+                width: 12px;
+                height: 16px;
+            }
+            & input {
+                font-size: 16px;
+                font-weight: 500;
+            }
+    }
+}

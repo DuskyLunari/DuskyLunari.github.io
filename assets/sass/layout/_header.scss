@@ -23,21 +23,4 @@
             @include title-font;
         }
     }
-    &__location-container {
-        background-color: #EAEAEA;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        gap: 17px;
-        @include header-shadow;
-            & i {
-                width: 12px;
-                height: 16px;
-            }
-            & input {
-                font-size: 16px;
-                font-weight: 500;
-            }
-    }
 }

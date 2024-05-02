@@ -1,19 +1,21 @@
 
-.location-container {
-    background-color: #EAEAEA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
+.search-input_container {
     width: 100%;
-    gap: 17px;
-    @include header-shadow;
-        & i {
-            width: 12px;
-            height: 16px;
-        }
-        & input {
-            font-size: 16px;
-            font-weight: 500;
-        }
+    &__location-container {
+        background-color: #EAEAEA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 50px;
+        gap: 17px;
+        @include header-shadow;
+            & i {
+                font-size: 16px;
+            }
+            & input {
+                font-size: 16px;
+                font-weight: 500;
+            }
+    }
 }

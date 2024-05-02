@@ -1,2 +1,64 @@
 @import "./heart-button";
 @import "./new-label";
+
+
+.restaurants {
+    background-color: $white-background;
+    padding: 60px 0;
+    width: 100%;
+    &__restaurants-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        &__restaurant-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 346px;
+            height: auto;
+            background-color: $white;
+            border-radius: 15px;
+            & img {
+                border-radius: 15px 15px 0 0;
+                object-fit: cover;
+            }
+            &__card-details {
+                display: flex;
+                justify-content: space-between;
+                padding: 12px;
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    & h3 {
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                    }
+                    & p {
+                        font-family: Roboto;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 300;
+                    }
+                }
+                &__heart-button {
+                    display: flex;
+                    align-items: center;
+                    & button {
+                        display: flex;
+                        justify-content: center;
+                        border: none;
+                        background-color: transparent;
+                        & i {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

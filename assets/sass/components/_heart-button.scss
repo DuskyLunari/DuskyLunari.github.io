@@ -1,0 +1,10 @@
+
+.heart-button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    & i {
+        font-size: 24px;
+    }
+}

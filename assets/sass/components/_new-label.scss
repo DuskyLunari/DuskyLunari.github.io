@@ -1,0 +1,18 @@
+
+.new-label {
+    position: absolute;
+    padding: 8px;
+    background-color: $tertiary-color;
+    display: flex;
+    justify-content: end;
+    transform: translate(260px, 12px);
+    border-radius: 2px;
+    & span {
+        color: $quaternary-color;
+        text-align: center;
+        font-family: $Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+    }
+}

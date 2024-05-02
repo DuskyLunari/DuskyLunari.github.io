@@ -1,10 +1,8 @@
 
 .header {
-    @include flex-column;
+    @include flex(column, center, center);
     &__logo-container {
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center);
         &__return-arrow {
 
             & i {
@@ -12,8 +10,7 @@
             }
         }
         &__logo {
-            display: flex;
-            justify-content: center;
+            @include flex(row, center);
             font-size: 30px;
             margin: 14px 0;
             @include title-font;

@@ -11,6 +11,9 @@
     & i {
         color: $icon-grey;
         font-size: 19px;
+        &:hover {
+            color: $primary-color;
+        }
     }
 
     &__container {

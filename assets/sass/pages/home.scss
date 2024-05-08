@@ -34,6 +34,7 @@
         @include flex(row, flex-start);
     }
     &__steps-container {
+        width: 100%;
         gap: 15px;
         @include flex(column, center, center);
     }
@@ -41,5 +42,11 @@
 
 .restaurants {
     background-color: $white-background;
-    padding: 60px 0;
+    padding: 60px 18px;
+    gap: 18px;
+    @include flex(column,flex-start,unset);
+    &__cards {
+        @include flex(column, center, center);
+        gap: 18px;
+    }
 }

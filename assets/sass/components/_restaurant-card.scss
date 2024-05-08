@@ -1,19 +1,18 @@
 @import "./heart-button";
 @import "./new-label";
 
-
-.restaurants-cards {
-    @include flex(column, center, center);
-    gap: 18px;
+.restaurant-link {
+    width: 100%;
     &__restaurant-card {
         position: relative;
         @include flex(column, center, unset);
-        width: 346px;
         height: auto;
         background-color: $white;
         border-radius: 15px;
         .new-label {
             position: absolute;
+            top: 13px;
+            right: 13px;
         }
         & img {
             border-radius: 15px 15px 0 0;

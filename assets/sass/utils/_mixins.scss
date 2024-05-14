@@ -9,6 +9,11 @@
 
 // Shadows
 
+@mixin loader-gradiant {
+    background-image: linear-gradient(to right top, #9356dc, #ac5bdc, #c160dc, #d667db, #e86edb,
+    #ce7cec, #af88f8, #8d92ff, #009cf4, #009bcd, #009398, #008766);
+}
+
 @mixin header-shadow {
     box-shadow: 0 5px 5px darken(#eaeaea, 8%), inset 0 5px 5px darken(#eaeaea, 8%);
 }

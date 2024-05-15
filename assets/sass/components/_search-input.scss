@@ -1,21 +1,19 @@
 
 .search-input_container {
+    @include flex(row, center, center);
     width: 100%;
+    height: 50px;
+    @include header-shadow;
+    background-color: $location-background;
     &__location-container {
-        background-color: #EAEAEA;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 50px;
         gap: 17px;
-        @include header-shadow;
-            & i {
-                font-size: 16px;
-            }
-            & input {
-                font-size: 16px;
-                font-weight: 500;
-            }
+        margin: 0 auto;
+        & i {
+            font-size: 16px;
+        }
+        & input {
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
 }

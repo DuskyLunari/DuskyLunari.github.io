@@ -4,7 +4,8 @@
     &__logo-container {
         @include flex(row, center, center);
         &__return-arrow {
-
+            position: absolute;
+            left: 5%;
             & i {
                 font-size: 30px;
             }

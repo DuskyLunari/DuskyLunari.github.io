@@ -29,3 +29,12 @@
         }
     }
 }
+
+@media (min-width: 1023.99px) {
+    .steps-button {
+        padding: 28px 38px;
+        &__container {
+            transform: translateX(-50px);
+        }
+    }
+}

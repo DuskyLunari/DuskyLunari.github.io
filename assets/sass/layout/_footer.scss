@@ -23,3 +23,19 @@
         }
     }
 }
+
+@media (min-width: 1023.99px) {
+    .footer {
+        @include flex(row-reverse, flex-start, center);
+        padding: 30px 25px;
+        &__logo {
+          align-items: flex-end;
+          font-size: 16px;
+        }
+        &__bloc {
+          @include flex(row, space-between, center);
+          padding: 0 60px;
+          gap: 20px;
+        }
+    }
+}

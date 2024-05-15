@@ -1,0 +1,10 @@
+
+.menu-title {
+    width: 100%;
+    @include flex(row, center, center);
+    gap: 20px;
+    & h2 {
+        font-size: 28px;
+        font-family: $Shrikhand;
+    }
+}

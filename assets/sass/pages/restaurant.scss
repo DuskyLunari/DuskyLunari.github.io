@@ -41,12 +41,26 @@
     }
 }
 
-@media (min-width: 1023.99px) {
+@media (min-width: 499.99px) and (max-width: 767.98px) {
+    .restaurant-page {
+        @include flex(column, flex-start, center);
+        &__menu {
+            &__section {
+                width: 75%;
+            }
+        }
+    }
+}
+
+@media (min-width: 767.99px) {
     .restaurant-page {
         @include flex(column, flex-start, center);
         &__menu {
             width: 80%;
             margin-top: -50px;
+            &__section {
+                width: 60%;
+            }
         }
     }
 }

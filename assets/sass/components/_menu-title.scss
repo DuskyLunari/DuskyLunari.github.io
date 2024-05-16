@@ -2,14 +2,15 @@
 .menu-title {
     width: 100%;
     @include flex(row, space-between, center);
-    padding: 0;
+    padding-top: 32px;
     & h2 {
         font-size: 28px;
         font-family: $Shrikhand;
     }
 }
 
-@media (min-width: 1023.99px) {
+
+@media (min-width: 424.99px) {
     .menu-title {
         @include flex(row, center, center);
         gap: 25px;

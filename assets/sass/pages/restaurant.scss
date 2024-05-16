@@ -14,16 +14,39 @@
 
 .restaurant-page {
     @include flex(column);
-    background-color: $white-background;
+    background-color: $white;
     & img {
-        object-fit: cover;
         width: 100%;
+        height: 300px;
     }
     &__menu {
+        box-sizing: border-box;
         width: 100%;
+        padding: 0 15px;
         border-radius: 25px 25px 0 0;
         @include flex(column, center, center);
+        background-color: $white-background;
+        z-index: 2;
         gap: 40px;
-        margin-top: -25px;
+        margin-top: -32px;
+        padding-bottom: 40px;
+        &__section {
+            @include flex(column);
+            gap: 12px;
+            width: 100%;
+        }
+        .main-button {
+            padding: 16px 48px;
+        }
+    }
+}
+
+@media (min-width: 1023.99px) {
+    .restaurant-page {
+        @include flex(column, flex-start, center);
+        &__menu {
+            width: 80%;
+            margin-top: -50px;
+        }
     }
 }

@@ -3,36 +3,35 @@
 // Delay handled in desired order
 
 // Entry dish section
-
 .restaurant-page__menu section:nth-child(2) h3 {
     animation: pop-up 2s ease forwards;
     opacity: 0;
 }
 
 .restaurant-page__menu section:nth-child(2) :not(h3) {
-    animation: pop-up 4s ease forwards;
+    animation: pop-up 3s ease forwards;
     opacity: 0;
 }
 
 // Main dish section
 .restaurant-page__menu section:nth-child(3) h3 {
-    animation: pop-up 6s ease forwards;
+    animation: pop-up 4s ease forwards;
     opacity: 0;
 }
 
 .restaurant-page__menu section:nth-child(3) :not(h3) {
-    animation: pop-up 8s ease forwards;
+    animation: pop-up 5s ease forwards;
     opacity: 0;
 }
 
 // Dessert dish section
 .restaurant-page__menu section:nth-child(4) h3 {
-    animation: pop-up 10s ease forwards;
+    animation: pop-up 6s ease forwards;
     opacity: 0;
 }
 
 .restaurant-page__menu section:nth-child(4) :not(h3) {
-    animation: pop-up 12s ease forwards;
+    animation: pop-up 7s ease forwards;
     opacity: 0;
 }
 

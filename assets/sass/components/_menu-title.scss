@@ -3,16 +3,17 @@
     width: 100%;
     @include flex(row, space-between, center);
     padding-top: 32px;
+    margin-right: 15px;
     & h2 {
         font-size: 28px;
         font-family: $Shrikhand;
     }
 }
 
-
 @media (min-width: 424.99px) {
     .menu-title {
         @include flex(row, center, center);
         gap: 25px;
+        margin-right: 0;
     }
 }

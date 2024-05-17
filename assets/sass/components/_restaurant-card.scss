@@ -1,9 +1,9 @@
 @import "./heart-button";
 @import "./new-label";
 
-.restaurant-link {
+.restaurant-card {
     width: 100%;
-    &__restaurant-card {
+    &__restaurant-link {
         position: relative;
         @include flex(column, center, unset);
         height: auto;

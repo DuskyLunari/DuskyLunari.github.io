@@ -1,40 +1,36 @@
 .steps-button {
+    background-color: $white-background;
+    @include flex(row, center, center);
+    width: 100%;
     border-radius: 20px;
     border: none;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    padding: 18px 24px;
+    padding: 28px 45px 28px 20px;
     font-size: 16px;
     font-weight: 500;
-    width: 100%;   
-    &__container {
-        transform: translateX(-35px);
-        display: flex;
-        gap: 18px;
-        &__step {
-            color: white;
-            background-color: $primary-color;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            font-size: 14px;
-            font-weight: 500;
-            @include flex(row, center, center)
-        }
-        & i {
-            color: $icon-grey;
-            font-size: 19px;
-            &:hover {
-                color: $primary-color;
-            }
+    gap: 20px;
+    position: relative;
+    &__step {
+        @include flex(row, center, center);
+        color: white;
+        background-color: $primary-color;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        font-size: 14px;
+        font-weight: 500;
+        position: absolute;
+        left: -10px;
+    }
+    & i {
+        color: $icon-grey;
+        font-size: 19px;
+        &:hover {
+            color: $primary-color;
         }
     }
-}
-
-@media (min-width: 1023.99px) {
-    .steps-button {
-        padding: 28px 38px;
-        &__container {
-            transform: translateX(-50px);
-        }
+    & p {
+        font-size: 16px;
+        font-weight: 500;
     }
 }

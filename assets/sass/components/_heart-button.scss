@@ -1,10 +1,56 @@
 
 .heart-button {
-    display: flex;
-    justify-content: center;
-    border: none;
+    @include flex(unset, center, center);
+    border: $primary-color;
     background-color: transparent;
     & i {
         font-size: 24px;
+    }
+    &__empty-heart {
+        position: absolute;
+    }
+    &__full-heart {
+        position: absolute;
+        opacity: 0;
+        border: transparent;
+        color: transparent;
+        background: linear-gradient($primary-color, $secondary-color);
+        background-clip: text;
+        &:hover {
+            animation: heart-popup 1s backwards;
+        }
+    }
+}
+
+@keyframes heart-popup {
+    0% {
+      opacity: 0;
+    }
+    10% {
+        opacity: .1;
+    }
+    30% {
+      opacity: .3;
+    }
+    40% {
+      opacity: .4;
+    }
+    50% {
+        opacity: .5;
+      }
+    60% {
+      opacity: .6;
+    }
+    70% {
+        opacity: .7;
+      }
+    80% {
+      opacity: .8;
+    }
+    90% {
+        opacity: .9;
+      }
+    100% {
+      opacity: 1;
     }
 }

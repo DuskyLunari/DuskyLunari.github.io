@@ -8,7 +8,7 @@
     opacity: 0;
 }
 
-.restaurant-page__menu section:nth-child(2) :not(h3) {
+.cards-g1 {
     animation: pop-up 3s ease forwards;
     opacity: 0;
 }
@@ -19,7 +19,7 @@
     opacity: 0;
 }
 
-.restaurant-page__menu section:nth-child(3) :not(h3) {
+.cards-g2 {
     animation: pop-up 5s ease forwards;
     opacity: 0;
 }
@@ -30,7 +30,7 @@
     opacity: 0;
 }
 
-.restaurant-page__menu section:nth-child(4) :not(h3) {
+.cards-g3 {
     animation: pop-up 7s ease forwards;
     opacity: 0;
 }

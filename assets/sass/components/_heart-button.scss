@@ -8,6 +8,7 @@
     }
     &__empty-heart {
         position: absolute;
+        transition: opacity .5s ease-in-out;
     }
     &__full-heart {
         position: absolute;
@@ -16,41 +17,11 @@
         color: transparent;
         background: linear-gradient($primary-color, $secondary-color);
         background-clip: text;
-        &:hover {
-            animation: heart-popup 1s backwards;
-        }
+        transition: opacity .5s ease-in-out;
     }
-}
-
-@keyframes heart-popup {
-    0% {
-      opacity: 0;
-    }
-    10% {
-        opacity: .1;
-    }
-    30% {
-      opacity: .3;
-    }
-    40% {
-      opacity: .4;
-    }
-    50% {
-        opacity: .5;
+    &:hover  {
+      .heart-button__full-heart {
+        opacity: 1;
       }
-    60% {
-      opacity: .6;
-    }
-    70% {
-        opacity: .7;
-      }
-    80% {
-      opacity: .8;
-    }
-    90% {
-        opacity: .9;
-      }
-    100% {
-      opacity: 1;
-    }
+  }
 }

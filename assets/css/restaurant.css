@@ -50,7 +50,7 @@ button {
 }
 
 .cards-g1 {
-  animation: pop-up 3s ease forwards;
+  animation: pop-up 4s ease forwards;
   opacity: 0;
 }
 
@@ -60,7 +60,7 @@ button {
 }
 
 .cards-g2 {
-  animation: pop-up 5s ease forwards;
+  animation: pop-up 6s ease forwards;
   opacity: 0;
 }
 
@@ -70,7 +70,7 @@ button {
 }
 
 .cards-g3 {
-  animation: pop-up 7s ease forwards;
+  animation: pop-up 8s ease forwards;
   opacity: 0;
 }
 
@@ -297,6 +297,7 @@ button {
 }
 .heart-button__empty-heart {
   position: absolute;
+  transition: opacity 0.5s ease-in-out;
 }
 .heart-button__full-heart {
   position: absolute;
@@ -306,43 +307,12 @@ button {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
           background-clip: text;
+  transition: opacity 0.5s ease-in-out;
 }
-.heart-button__full-heart:hover {
-  animation: heart-popup 1s backwards;
+.heart-button:hover .heart-button__full-heart {
+  opacity: 1;
 }
 
-@keyframes heart-popup {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.1;
-  }
-  30% {
-    opacity: 0.3;
-  }
-  40% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  70% {
-    opacity: 0.7;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  90% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .restaurant-page {
   display: flex;
   flex-direction: column;
